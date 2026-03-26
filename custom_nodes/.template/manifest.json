@@ -1,0 +1,24 @@
+{
+  "id": "my-pack-id",
+  "name": "My Pack Name",
+  "displayName": "My Pack Display Name",
+  "version": "1.0.0",
+  "author": "Author Name",
+  "description": "Short description of what this pack does",
+  "category": "image|video|audio|3d|llm|utility",
+  "minAppVersion": "0.8.0",
+  "license": "MIT",
+  "repository": "",
+  "homepage": "",
+  "nodes": [
+    {
+      "type": "myNodeType",
+      "name": "My Node",
+      "category": "image/generation",
+      "description": "What this node does",
+      "specFile": "specs/myNodeType.json"
+    }
+  ],
+  "hasSpecs": true,
+  "dependencies": []
+}

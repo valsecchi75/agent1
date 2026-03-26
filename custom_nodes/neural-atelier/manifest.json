@@ -1,0 +1,37 @@
+{
+  "id": "neural-atelier",
+  "name": "Neural Atelier",
+  "displayName": "Neural Atelier",
+  "version": "1.0.0",
+  "author": "Sergio Valsecchi",
+  "description": "Fashion-focused AI nodes for sketch-to-photo, styling, and recoloring",
+  "category": "image",
+  "minAppVersion": "0.8.0",
+  "license": "MIT",
+  "repository": "https://github.com/valsecchi75/agent1",
+  "nodes": [
+    {
+      "type": "naSketchToPhoto",
+      "name": "NA - Sketch to Photo",
+      "category": "image/generation",
+      "description": "Converts 2D sketches to photorealistic renders via Gemini Flash + Nano Banana",
+      "specFile": "specs/naSketchToPhoto.json"
+    },
+    {
+      "type": "naStylingDetail",
+      "name": "NA - Styling Detail Change",
+      "category": "image/editing",
+      "description": "Targeted styling modifications on garments — change collars, sleeves, buttons, pockets",
+      "specFile": "specs/naStylingDetail.json"
+    },
+    {
+      "type": "naRecolor",
+      "name": "NA - Recolor",
+      "category": "image/editing",
+      "description": "Recolors garments to target Pantone color or reference image",
+      "specFile": "specs/naRecolor.json"
+    }
+  ],
+  "hasSpecs": true,
+  "dependencies": []
+}
