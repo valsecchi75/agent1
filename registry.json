@@ -1,6 +1,6 @@
 {
-  "registryVersion": "2.0.2",
-  "updatedAt": "2026-03-28T05:39:23.000Z",
+  "registryVersion": "2.0.3",
+  "updatedAt": "2026-03-28T06:04:58.000Z",
   "baseUrl": "https://raw.githubusercontent.com/valsecchi75/agent1/main",
   "templates": [
     {
@@ -28,6 +28,37 @@
         "agent1_0059.jpg",
         "agent1_0060.jpg",
         "agent1_0061.jpg"
+      ]
+    },
+    {
+      "slug": "recreating-real-shots-with-ai-talent",
+      "name": "Recreating real shots with AI talent",
+      "description": "Replicates the composition, pose, styling, and visual structure of an original photograph, then replaces the subject with a consistent AI influencer while preserving the realism and editorial feel of the source image.",
+      "author": "User",
+      "version": 1,
+      "category": "simple",
+      "tags": [
+        "Gemini",
+        "LLM",
+        "Nano Banana",
+        "Talent"
+      ],
+      "techTags": [
+        "Custom: morpheusModelManagement",
+        "LLM",
+        "Nano Banana"
+      ],
+      "nodeCount": 8,
+      "previewPath": "templates/recreating-real-shots-with-ai-talent/preview/agent1_0067.jpg",
+      "templatePath": "templates/recreating-real-shots-with-ai-talent/template.json",
+      "previewFrames": [
+        "agent1_0067.jpg",
+        "agent1_0068.jpg",
+        "agent1_0069.jpg",
+        "agent1_0070.jpg",
+        "agent1_0071.jpg",
+        "agent1_0073.jpg",
+        "agent1_0074.jpg"
       ]
     }
   ],
