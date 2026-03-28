@@ -6,7 +6,7 @@
   "author": "Sergio Valsecchi",
   "description": "Fashion-focused AI nodes for sketch-to-photo, styling, and recoloring",
   "category": "image",
-  "minAppVersion": "0.8.0",
+  "minAppVersion": "0.9.0",
   "license": "MIT",
   "repository": "https://github.com/valsecchi75/agent1",
   "nodes": [

@@ -6,7 +6,7 @@
   "author": "Author Name",
   "description": "Short description of what this pack does",
   "category": "image|video|audio|3d|llm|utility",
-  "minAppVersion": "0.8.0",
+  "minAppVersion": "0.9.0",
   "license": "MIT",
   "repository": "",
   "homepage": "",

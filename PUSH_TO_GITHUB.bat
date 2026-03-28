@@ -6,6 +6,10 @@ REM ========================================================================
 
 setlocal enabledelayexpansion
 
+REM Disable git pager so script never blocks waiting for user input
+set "GIT_PAGER=cat"
+set "GIT_TERMINAL_PROMPT=0"
+
 set "GITHUB_USERNAME=valsecchi75"
 set "REPO_NAME=agent1"
 set "REMOTE_URL=https://github.com/%GITHUB_USERNAME%/%REPO_NAME%.git"
@@ -96,17 +100,14 @@ if errorlevel 1 (
 REM Check if there are changes to commit
 git diff --cached --quiet >nul 2>&1
 if %errorlevel% equ 0 (
-    echo No changes to commit.
-    echo.
-    echo Done! Everything is already up to date.
-    pause
-    exit /b 0
+    echo No new changes to commit.
+    goto :check_push
 )
 
 REM Show what changed
 echo.
 echo Changes to commit:
-git diff --cached --stat
+git --no-pager diff --cached --stat
 echo.
 
 REM Step 3: Commit
@@ -122,9 +123,25 @@ if errorlevel 1 (
 echo [OK] Committed: %COMMIT_MSG%
 echo.
 
-REM Step 4: Push (force if history was reset)
-echo Step 4: Pushing to GitHub...
+:check_push
+REM Step 4: Check for unpushed commits, then push
+echo Step 4: Checking for unpushed commits...
 echo -----------------------------------------------
+git fetch origin main >nul 2>&1
+
+REM Count commits ahead of origin/main
+set "AHEAD=0"
+for /f %%i in ('git rev-list --count origin/main..HEAD 2^>nul') do set "AHEAD=%%i"
+
+if "%AHEAD%"=="0" (
+    echo.
+    echo Nothing to push. Everything is already up to date on GitHub.
+    pause
+    exit /b 0
+)
+
+echo Found %AHEAD% unpushed commit(s). Pushing...
+echo.
 git push -u origin main --force-with-lease
 if errorlevel 1 (
     echo.
@@ -142,7 +159,7 @@ if errorlevel 1 (
         exit /b 1
     )
 )
-echo [OK] Pushed to GitHub
+echo [OK] Pushed %AHEAD% commit(s) to GitHub
 echo.
 
 echo ========================================================================

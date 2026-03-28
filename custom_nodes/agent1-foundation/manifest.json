@@ -2,11 +2,11 @@
   "id": "agent1-foundation",
   "name": "AGENT 1 Foundation",
   "displayName": "AGENT 1 Foundation Nodes",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "author": "AGENT 1 Team",
   "description": "Core built-in nodes — image/audio input, AI generation (image, video, audio, 3D), LLM, video processing, routing, and output nodes",
   "category": "core",
-  "minAppVersion": "0.8.0",
+  "minAppVersion": "0.9.0",
   "license": "MIT",
   "repository": "https://github.com/valsecchi75/agent1",
   "isCore": true,
@@ -34,7 +34,10 @@
     { "type": "router",            "name": "Router",                 "category": "flow/routing",       "specFile": "specs/router.json" },
     { "type": "switch",            "name": "Switch",                 "category": "flow/routing",       "specFile": "specs/switch.json" },
     { "type": "conditionalSwitch", "name": "Conditional Switch",     "category": "flow/routing",       "specFile": "specs/conditionalSwitch.json" },
-    { "type": "glbViewer",         "name": "GLB Viewer",             "category": "3d/utility",         "specFile": "specs/glbViewer.json" }
+    { "type": "glbViewer",         "name": "GLB Viewer",             "category": "3d/utility",         "specFile": "specs/glbViewer.json" },
+    { "type": "previewImage",      "name": "Preview Image",          "category": "utility/display",    "specFile": "specs/previewImage.json" },
+    { "type": "showAnything",      "name": "Show Anything",          "category": "utility/display",    "specFile": "specs/showAnything.json" },
+    { "type": "morpheusModelManagement", "name": "Morpheus Model Management", "category": "custom/morpheus", "specFile": "specs/morpheusModelManagement.json" }
   ],
   "hasSpecs": true,
   "dependencies": []
