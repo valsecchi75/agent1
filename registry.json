@@ -1,6 +1,6 @@
 {
-  "registryVersion": "2.0.3",
-  "updatedAt": "2026-03-29T06:37:36.000Z",
+  "registryVersion": "2.0.4",
+  "updatedAt": "2026-03-29T06:47:09.000Z",
   "baseUrl": "https://raw.githubusercontent.com/valsecchi75/agent1/main",
   "templates": [
     {
@@ -28,6 +28,34 @@
         "agent1_0059.jpg",
         "agent1_0060.jpg",
         "agent1_0061.jpg"
+      ]
+    },
+    {
+      "slug": "look-recast",
+      "name": "Look Recast",
+      "description": "Recreates a reference image with the same environment, pose, and visual structure, while replacing the original subject with a selected talent and a custom outfit.",
+      "author": "User",
+      "version": 1,
+      "category": "simple",
+      "tags": [
+        "Gemini",
+        "LLM",
+        "Nano Banana",
+        "Talent",
+        "Try-on"
+      ],
+      "techTags": [
+        "Custom: morpheusModelManagement",
+        "LLM",
+        "Nano Banana"
+      ],
+      "nodeCount": 12,
+      "previewPath": "templates/look-recast/preview/agent1_0079.jpg",
+      "templatePath": "templates/look-recast/template.json",
+      "previewFrames": [
+        "agent1_0079.jpg",
+        "agent1_0080.jpg",
+        "agent1_0081.jpg"
       ]
     },
     {
