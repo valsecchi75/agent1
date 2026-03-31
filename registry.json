@@ -1,8 +1,38 @@
 {
-  "registryVersion": "2.0.4",
-  "updatedAt": "2026-03-29T06:47:09.000Z",
+  "registryVersion": "2.0.5",
+  "updatedAt": "2026-03-31T05:53:46.000Z",
   "baseUrl": "https://raw.githubusercontent.com/valsecchi75/agent1/main",
   "templates": [
+    {
+      "slug": "brand-visual-builder",
+      "name": "Brand Visual Builder",
+      "description": "Builds brand-coherent visuals by combining product references, selected talent, pose direction, and mood imagery into a polished final image.",
+      "author": "SV75",
+      "version": 1,
+      "category": "advanced",
+      "tags": [
+        "Gemini",
+        "LLM",
+        "Nano Banana",
+        "Prompt Constructor",
+        "Talent"
+      ],
+      "techTags": [
+        "Custom: morpheusModelManagement",
+        "LLM",
+        "Nano Banana",
+        "Prompt Constructor"
+      ],
+      "nodeCount": 15,
+      "previewPath": "templates/brand-visual-builder/preview/generated-1774892008382.jpg",
+      "templatePath": "templates/brand-visual-builder/template.json",
+      "previewFrames": [
+        "generated-1774892008382.jpg",
+        "generated-1774892512523.jpg",
+        "generated-1774894031233.jpg",
+        "generated-1774936100924.jpg"
+      ]
+    },
     {
       "slug": "combat-pose-industrial-foundry",
       "name": "Combat pose - industrial foundry",
