@@ -1,6 +1,6 @@
 {
-  "registryVersion": "2.0.5",
-  "updatedAt": "2026-03-31T05:53:46.000Z",
+  "registryVersion": "2.0.6",
+  "updatedAt": "2026-04-02T16:11:10.000Z",
   "baseUrl": "https://raw.githubusercontent.com/valsecchi75/agent1/main",
   "templates": [
     {
@@ -31,6 +31,37 @@
         "generated-1774892512523.jpg",
         "generated-1774894031233.jpg",
         "generated-1774936100924.jpg"
+      ]
+    },
+    {
+      "slug": "character-consistency",
+      "name": "Character consistency",
+      "description": "Builds a consistent character sheet from a selected talent, combining outfit and accessory references to generate aligned full-body views, expressive close-ups, and detail panels within one coherent visual identity.",
+      "author": "SV",
+      "version": 1,
+      "category": "simple",
+      "tags": [
+        "Gemini",
+        "LLM",
+        "Nano Banana",
+        "Prompt Constructor",
+        "Character consistency"
+      ],
+      "techTags": [
+        "Custom: morpheusModelManagement",
+        "Custom: previewImage",
+        "Custom: showAnything",
+        "LLM",
+        "Nano Banana",
+        "Prompt Constructor"
+      ],
+      "nodeCount": 15,
+      "previewPath": "templates/character-consistency/preview/agent1_0098.jpg",
+      "templatePath": "templates/character-consistency/template.json",
+      "previewFrames": [
+        "agent1_0098.jpg",
+        "agent1_0100.jpg",
+        "agent1_0104.jpg"
       ]
     },
     {
